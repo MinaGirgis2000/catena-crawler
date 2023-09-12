@@ -66,6 +66,11 @@ function commentaryTextToTextAndSource(text) {
   let lastPeriod = text.lastIndexOf('.');
   let textWithoutLastPeriod = text.substring(0, lastPeriod);
   let secondToLastPeriod = textWithoutLastPeriod.lastIndexOf('.');
+  
+  if (text.substring(secondToLastPeriod-3, secondToLastPeriod) === " St") {
+    secondToLastPeriod = text.substring(0, secondToLastPeriod).lastIndexOf('.');
+  }
+
   let commentaryText = textWithoutLastPeriod.substring(0, secondToLastPeriod);
   let commentarySource = textWithoutLastPeriod.substring(secondToLastPeriod + 1);
 

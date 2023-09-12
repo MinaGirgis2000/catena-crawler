@@ -7,7 +7,8 @@
   "private": true,
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "cli-color": "^2.0.3"
+    "cli-color": "^2.0.3",
+    "fs": "^0.0.1-security"
   },
   "scripts": {
     "start": "clear && node index.js"
