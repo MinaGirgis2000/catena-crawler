@@ -73,6 +73,5 @@ function commentaryTextToTextAndSource(text) {
   while(/\d+/.test(commentarySource)) {
     commentarySource = commentaryTextToTextAndSource(commentarySource).source.trim();
   }
-
   return {text: commentaryText.trim(), source: commentarySource.trim()};
 }
