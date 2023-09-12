@@ -1,0 +1,15 @@
+{
+  "name": "commentary-crawler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "TechLion Dev",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "cli-color": "^2.0.3"
+  },
+  "scripts": {
+    "start": "clear && node index.js"
+  }
+}
